@@ -21,27 +21,61 @@ body {
 .conteiner {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 1px solid teal; */
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
 }
 
 button {
   cursor: pointer;
 }
 
-.section-padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .section-padding {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-padding {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
-  margin-bottom: 50px;
+  font-weight: 700;
   color: var(--title);
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 h1,
@@ -440,6 +474,49 @@ ul {
   width: 270px;
   margin: auto;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .work .work {
+    padding-top: 0;
+  }
+  .work .work__items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .work .work__items .work__list + .work__list {
+    margin-left: 30px;
+  }
+  .work .work__img {
+    display: block;
+    max-width: 100%;
+    height: auto 0;
+  }
+  .work .work__list {
+    position: relative;
+  }
+  .work .work__title {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hero-text);
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 
 .work {
