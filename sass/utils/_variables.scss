@@ -1,0 +1,49 @@
+:root {
+    --title: #212121;
+    --hover-focus-color: #2196f3;
+    --backgraund-body: #ffffff;
+    --text-page: #757575;
+    --hero-text: #ffffff;
+    --logo-color: #000000;
+    --footer-backgraund: #2f303a;
+    --backgraund-section: #f5f4fa;
+  }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-page);
+  background-color: var(--backgraund-body);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
+// Контейнер
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 1px solid teal; */
+}
+
+button {
+  cursor: pointer;
+}
+
+// Основні параметри секцій
+
+.section-padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-title {
+  margin-bottom: 50px;
+
+  color: var(--title);
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
