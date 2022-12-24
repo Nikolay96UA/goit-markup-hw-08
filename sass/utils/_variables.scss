@@ -25,8 +25,6 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 
-  // width: 1200px;
-
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -47,8 +45,8 @@ button {
 // Основні параметри секцій
 
 .section-padding {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     padding-top: 60px;
@@ -62,7 +60,6 @@ button {
 }
 
 .section-title {
-  
   font-weight: 700;
   color: var(--title);
 
