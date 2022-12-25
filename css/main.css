@@ -693,55 +693,76 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) {
-  .team__item {
-    display: block;
-  }
-}
-@media screen and (min-width: 480px) {
-  .team__item {
-    display: flex;
-  }
-}
-@media screen and (min-width: 480px) {
-  .team__item {
-    display: flex;
-  }
-}
 
 .team__list {
+  display: block;
   font-size: 16px;
   line-height: 1.18;
+  margin-bottom: 0;
 }
 @media screen and (min-width: 480px) {
   .team__list {
-    display: flex;
-    margin-bottom: 30px;
+    display: block;
   }
 }
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
   .team__list {
     display: flex;
+    flex-wrap: nowrap;
   }
 }
-.team__list .team__list .team__item:not(:last-child) {
-  margin-right: 30px;
-  margin-bottom: 30px;
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list .team__item:nth-child(2n) {
+    margin-left: 30px;
+  }
 }
-@media screen and (min-width: 480px) {
-  .team__list .team__list .team__item:not(:last-child) {
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__list .team__item:nth-child(n+2) {
     margin-bottom: 30px;
   }
 }
 
-.team__img {
+.team__list .team__item:not(:last-child) {
+  margin-bottom: 0px;
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team__list .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list .team__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team__list .team__img {
   display: block;
   height: auto;
+  max-width: 100%;
+}
+@media screen and (mix-width: 480px) {
+  .team__list .team__img {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list .team__img {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__list .team__img {
+    width: 270px;
+  }
 }
 
 .team__name {
