@@ -1,7 +1,13 @@
 /*  форма підписки */
 .subscription {
   display: block;
-  margin-left: 93px;
+  // margin-left: 93px;
+  text-align: center;
+
+
+  @media screen and (min-width:480px) {
+    text-align: center;
+  }
 
   &__conteiner {
     display: flex;

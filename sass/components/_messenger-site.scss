@@ -1,7 +1,13 @@
 // cоц-мережі сайцу webstudio
 
 .messenger-site {
-  margin-left: 70px;
+  // margin-left: 70px;
+  display: block;
+  text-align: center;
+
+  @media screen and (min-width:480px) {
+    text-align: center;
+  }
 }
 
 .messenger-site__title {
@@ -17,6 +23,13 @@
 
 .messenger-site__list {
   display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width:480px) {
+    justify-content: center;
+    margin-bottom: 60px;
+  }
 
   & .messenger-site__item + .messenger-site__item {
     margin-left: 10px;

@@ -1,9 +1,7 @@
-
-/* Підвал */
-
-/* Лого футер */
 .logo-footer {
     display: block;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 28px;
   
     font-family: Raleway, sans-serif;
@@ -16,12 +14,7 @@
     @media screen and (max-width:1199px) {
       font-size: 24px;
       line-height: 1.16;
-      text-align: center;
+      margin-right: auto;
+    margin-left: auto;
     }
-
-    
-  }
-  
-  .logo--studio-white {
-    color: var(--hero-text);
   }
