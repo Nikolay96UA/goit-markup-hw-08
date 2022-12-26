@@ -53,8 +53,8 @@
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: auto;
-  margin-right: auto;
+
+  justify-content: center;
 
   .clients__item {
     margin-right: 30px;
