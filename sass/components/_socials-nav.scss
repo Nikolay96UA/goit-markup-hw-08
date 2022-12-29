@@ -1,13 +1,29 @@
 .socials {
-  display: flex;
-  margin-left: auto;
+  display: none;
 
-  // один зі способів прибирати крайній margin
-  & .socials__list + .socials__list {
-    margin-left: 50px;
+  @media screen and (min-widh: 480px) {
+    display: none;
+  }
+
+  @media screen and(min-width:768px) and (max-width:1199px) {
+    display: block;
+    margin-left: 90px;
+
+    .socials__list:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+
+    // один зі способів прибирати крайній margin
+    & .socials__list + .socials__list {
+      margin-left: 50px;
+    }
   }
 }
-
 
 .socials__link {
   display: flex;
@@ -25,6 +41,11 @@
   &:hover,
   &:focus {
     color: var(--hover-focus-color);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 12px;
+    line-height: 1.16;
   }
 }
 
