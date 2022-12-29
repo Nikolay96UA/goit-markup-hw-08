@@ -72,19 +72,19 @@
           <h1 class="portfolio__title visually-hidden">Портфоліо</h1>
 
           <ul class="portfolio-link filter list">
-            <li>
+            <li class="filter__items">
               <button type="button" class="filter__button">Усі</button>
             </li>
-            <li>
+            <li class="filter__items">
               <button type="button" class="filter__button">Веб-сайти</button>
             </li>
-            <li>
+            <li class="filter__items">
               <button type="button" class="filter__button">Додатки</button>
             </li>
-            <li>
+            <li class="filter__items">
               <button type="button" class="filter__button">Дизайн</button>
             </li>
-            <li>
+            <li class="filter__items">
               <button type="button" class="filter__button">Маркетинг</button>
             </li>
           </ul>
@@ -243,66 +243,67 @@
     </main>
 
     <footer class="footer">
-      <div class="conteiner footer-conteiner">
-        <div class="conteiner-address">
-          <a href="./index.html" class="logo-footer"
-            ><span class="logo__web">Web</span><span class="logo--studio-white">Studio</span></a
-          >
-          <address>
-            <ul class="list footer-address">
-              <li class="footer-address__item">
-                <a
-                  href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
-                  class="footer-address__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
+      <div class="footer__desktop-conteiner conteiner">
+        <div class="footer-conteiner">
+          <div class="conteiner-address">
+            <a href="./index.html" class="logo-footer"
+              ><span class="logo__web">Web</span><span class="logo--studio-white">Studio</span></a
+            >
+            <address>
+              <ul class="list footer-address">
+                <li class="footer-address__item">
+                  <a
+                    href="https://www.google.com/maps/place/бул.+Леси+Украинки,+26,+Киев,+02000/@50.4265807,30.5383858,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858"
+                    class="footer-address__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
 
-              <li class="footer-address__item">
-                <a href="mailto:info@devstudio.com" class="footer__contact">info@devstudio.com</a>
-              </li>
+                <li class="footer-address__item">
+                  <a href="mailto:info@devstudio.com" class="footer__contact">info@devstudio.com</a>
+                </li>
 
-              <li class="footer-address__item">
-                <a href="tel:+380961111111" class="footer__contact">+38 096 111 11 11</a>
+                <li class="footer-address__item">
+                  <a href="tel:+380961111111" class="footer__contact">+38 096 111 11 11</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+
+          <div class="messenger-site">
+            <p class="messenger-site__title">Приєднуйтесь</p>
+            <ul class="list messenger-site__list">
+              <li class="messenger-site__item">
+                <a href="" class="messenger-site__link">
+                  <svg class="messenger-site__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="messenger-site__item">
+                <a href="" class="messenger-site__link">
+                  <svg class="messenger-site__icon" width="20px" height="16.25px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="messenger-site__item">
+                <a href="" class="messenger-site__link">
+                  <svg class="messenger-site__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="messenger-site__item">
+                <a href="" class="messenger-site__link">
+                  <svg class="messenger-site__icon" width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-
-        <div class="messenger-site">
-          <p class="messenger-site__title">Приєднуйтесь</p>
-          <ul class="list messenger-site__list">
-            <li class="messenger-site__item">
-              <a href="" class="messenger-site__link">
-                <svg class="messenger-site__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="messenger-site__item">
-              <a href="" class="messenger-site__link">
-                <svg class="messenger-site__icon" width="20px" height="16.25px">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="messenger-site__item">
-              <a href="" class="messenger-site__link">
-                <svg class="messenger-site__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="messenger-site__item">
-              <a href="" class="messenger-site__link">
-                <svg class="messenger-site__icon" width="20px" height="20px">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
         <form class="subscription">
           <label for="input-submit" class="subscription__label">Підпишіться на розсилку</label>
           <div class="subscription__conteiner">
