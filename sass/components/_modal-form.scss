@@ -11,6 +11,8 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: scroll;
+
   // не відображає модальне вікно та дозволяє клік через модальне вікно
   &.is-hidden {
     opacity: 0;
@@ -18,18 +20,46 @@
   }
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.modal-form {
+  display: block;
+  width: 100%;
+  padding: 40px 40px;
+}
 
-  min-width: 528px;
-  min-height: 581px;
+.modal {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 93px;
+
+  max-width: 528px;
+  width: 100%;
+  max-height: auto;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
 }
 
 .modal__close {
@@ -64,22 +94,23 @@
 /* Форма */
 
 .modal-form__conteiner {
-  padding: 0 40px 0 40px;
-
   & .modal-form__submit:not(:last-child) {
     margin-bottom: 10px;
   }
 }
 
 .modal-form__title {
-  margin-top: 40px;
-  margin-bottom: 12px;
-
+  margin: 0 40px 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   color: var(--title);
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .modal-form__label {
@@ -120,7 +151,7 @@
   padding-top: 12px;
   padding-left: 16px;
 
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   display: flex;
@@ -139,11 +170,16 @@
   display: flex;
   align-items: center;
   margin-top: 25px;
-  margin-left: 54px;
-  font-size: 14px;
-  line-height: 1.71;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form__terms {
