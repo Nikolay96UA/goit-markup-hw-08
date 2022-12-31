@@ -958,7 +958,7 @@ ul {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .clients__list .clients__item:nth-child(2n) {
     margin-right: 0;
   }
