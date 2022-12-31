@@ -3,13 +3,18 @@
 }
 
 .nav {
-    display: flex;
+  display: flex;
 
+  @media screen and (max-width: 767px) {
+    align-items: center;
+    justify-content: space-between;
+  }
 }
-  
-  .main-nav {
+
+.main-nav {
+  display: block;
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
   }
-  
-  
+}

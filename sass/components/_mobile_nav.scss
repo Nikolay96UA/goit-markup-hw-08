@@ -1,0 +1,28 @@
+.mobile-nav {
+  display: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+
+  @media screen and (max-width:767px) {
+    display: inline-flex;
+  }
+}
+
+.mobile-nav__icon:hover,
+.mobile-nav__icon:focus {
+  fill: var(--hover-focus-color);
+}
+
+.mobile-nav .icon-cross {
+  display: none;
+}
+
+.mobile-nav.is-open .icon-cross {
+  display: block;
+}
+
+.mobile-nav.is-open .icon-menu {
+  display: none;
+}
