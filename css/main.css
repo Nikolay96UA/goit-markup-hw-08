@@ -128,7 +128,8 @@ ul {
 }
 
 .main-nav {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .main-nav {
@@ -138,7 +139,6 @@ ul {
 }
 
 .logo {
-  margin-right: 93px;
   display: flex;
   align-items: center;
   color: var(--logo-color);
@@ -147,6 +147,11 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 .logo__web {
   color: var(--hover-focus-color);
@@ -296,18 +301,6 @@ ul {
 .mobile-nav__icon:hover,
 .mobile-nav__icon:focus {
   fill: var(--hover-focus-color);
-}
-
-.mobile-nav .icon-cross {
-  display: none;
-}
-
-.mobile-nav.is-open .icon-cross {
-  display: block;
-}
-
-.mobile-nav.is-open .icon-menu {
-  display: none;
 }
 
 /* Герой */

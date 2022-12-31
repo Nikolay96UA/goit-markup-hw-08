@@ -41,18 +41,6 @@
               <a href="" class="nav__link">Контакти</a>
             </li>
           </ul>
-
-          <button type="button" class="mobile-nav is-open">
-            <svg
-              width="40"
-              height="40"
-              class="mobile-nav__icon"
-              aria-label="Перемикач мобільного меню"
-            >
-              <use class="icon-cross" href="./images/symbol-defs.svg#close-menu-mobile"></use>
-              <use class="icon-menu" href="./images/symbol-defs.svg#menu-mobile"></use>
-            </svg>
-          </button>
         </nav>
         <!-- Зворотний зв'язок-->
         <ul class="socials list">
@@ -72,6 +60,16 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-nav">
+          <svg
+            width="40"
+            height="40"
+            class="mobile-nav__icon"
+            aria-label="Перемикач мобільного меню"
+          >
+            <use class="icon-menu" href="./images/symbol-defs.svg#menu-mobile"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -539,5 +537,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
