@@ -63,6 +63,65 @@
             >
           </li>
         </ul>
+        <div class="mobile-menu js-menu-container">
+          <button type="button" class="menu-close js-close-menu">
+            <svg
+              width="40"
+              height="40"
+              class="close-menu__icon"
+              aria-label="Перемикач мобільного меню"
+            >
+              <use class="icon-menu" href="./images/symbol-defs.svg#close-menu-mobile"></use>
+            </svg>
+          </button>
+  
+          <div class="menu-content">
+            <nav class="mob-nav">
+              <ul class="list mob-nav__site">
+                <li class="mob-nav__list">
+                  <a href="./index.html" class="mob-nav__link ">Студія</a>
+                </li>
+  
+                <li class="mob-nav__list">
+                  <a href="./portfolio.html" class="mob-nav__link mob-nav__link--active">Портфоліо</a>
+                </li>
+  
+                <li class="mob-nav__list">
+                  <a href="" class="mob-nav__link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="mob-contacts">
+              <ul class="mob-socials list">
+                <li class="mob-socials__list">
+                  <a href="mailto:info@devstudio.com" class="mob-socials__email">
+                    info@devstudio.com
+                  </a>
+                </li>
+  
+                <li class="mob-socials__list">
+                  <a href="tel:+380961111111" class="mob-socials__tel">+38 096 111 11 11</a>
+                </li>
+              </ul>
+  
+              <ul class="mob-messenger list">
+                <li class="mob-messenger__list">
+                  <a href="" class="mob-messenger__link">Instagram</a>
+                </li>
+                <li class="mob-messenger__list">
+                  <a href="" class="mob-messenger__link">Twitter</a>
+                </li>
+                <li class="mob-messenger__list">
+                  <a href="" class="mob-messenger__link">Facebook</a>
+                </li>
+                <li class="mob-messenger__list">
+                  <a href="" class="mob-messenger__link">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    
       </div>
     </header>
 
@@ -323,5 +382,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
