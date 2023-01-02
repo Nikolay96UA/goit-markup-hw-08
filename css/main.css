@@ -285,7 +285,7 @@ ul {
   fill: currentColor;
 }
 
-.mobile-nav {
+.open-menu {
   display: none;
   padding: 0;
   margin: 0;
@@ -293,13 +293,13 @@ ul {
   border: none;
 }
 @media screen and (max-width: 767px) {
-  .mobile-nav {
+  .open-menu {
     display: inline-flex;
   }
 }
 
-.mobile-nav__icon:hover,
-.mobile-nav__icon:focus {
+.open-menu__icon:hover,
+.open-menu__icon:focus {
   fill: var(--hover-focus-color);
 }
 
