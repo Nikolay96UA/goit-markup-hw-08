@@ -425,14 +425,29 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_mobile_2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .overlay {
-    background-image: url(../images/hero-table.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-table.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_table_2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .overlay {
-    background-image: url(../images/hero-desktop.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-desktop.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_desktop_2x.jpg);
   }
 }
 
@@ -946,16 +961,19 @@ ul {
 .team__list .team__img {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 450px;
+  width: 100%;
 }
 @media screen and (mix-width: 480px) {
   .team__list .team__img {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
   .team__list .team__img {
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
   }
 }
 @media screen and (min-width: 1200px) {

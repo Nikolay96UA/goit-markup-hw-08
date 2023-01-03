@@ -64,18 +64,22 @@
 .team__list .team__img {
   display: block;
   height: auto;
-  max-width: 100%;
+  max-width: 450px;
+  width:100%;
 
   @media screen and (mix-width: 480px) {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
+
   }
 }
 
