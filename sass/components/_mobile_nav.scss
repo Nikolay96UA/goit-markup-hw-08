@@ -15,19 +15,6 @@
   }
 }
 
-.mobile-menu {
-  padding: 0 0 48px 40px;
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--backgraund-body);
-  z-index: 3;
-
-  @media screen and (min-width: 767px) {
-    display: none;
-  }
-}
-
 .menu-close {
   display: block;
   margin: 10px 15px 0 0;
@@ -39,6 +26,50 @@
   .close-menu__icon:focus {
     fill: var(--hover-focus-color);
   }
+}
+
+.menu-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
+.mobile-menu {
+  padding: 0 0 48px 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--backgraund-body);
+  z-index: 3;
+  opacity: 1;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 767px) {
+    display: none;
+  }
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-100%);
+  }
+}
+
+.mob-nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--title);
+}
+
+.mob-nav__list:not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .mob-socials {
@@ -69,28 +100,24 @@
   color: #757575;
 }
 
-
-
-.mob-nav__link {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 47px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  color: var(--title);
-}
-
-.mob-nav__list:not(:last-child) {
-  margin-bottom: 32px;
-}
-
 .mob-messenger {
   display: flex;
 }
 
+.mob-messenger__list {
+  padding: 0 10px 0 10px;
+}
+
 .mob-nav__link--active {
   color: var(--hover-focus-color);
+}
+
+.mob-messenger__list:first-child {
+  padding-left: 0;
+}
+
+.mob-messenger__list:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mob-messenger__link {
@@ -102,34 +129,3 @@
   text-decoration: none;
   color: var(--hover-focus-color);
 }
-
-.mob-messenger__list {
-  padding: 0 10px 0 10px;
-}
-
-.mob-messenger__list:first-child {
-  padding-left: 0;
-}
-
-.mob-messenger__list:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-}
-
-.menu-content{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: space-between;
-}
-
-// .mobile-nav .icon-cross {
-//   display: none;
-// }
-
-// .mobile-nav.is-open .icon-cross {
-//   display: block;
-// }
-
-// .mobile-nav.is-open .icon-menu {
-//   display: none;
-// }
